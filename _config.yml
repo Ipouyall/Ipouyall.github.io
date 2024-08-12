@@ -24,9 +24,9 @@ author:
   avatar           : "profile.jpg"
   name             : "Pouya Sadeghi"
   pronouns         : # example: "she/her"  
-  bio              : "B.Sc in Computer Engineering at the University of Tehran"
+  bio              : "B.Sc in Computer Engineering<br>University of Tehran"
   location         : "Tehran, Iran"
-  employer         : ""
+  employer         : #
   uri              : # URL
   email            : "pouyasadeghi2012@gmail.com"
 

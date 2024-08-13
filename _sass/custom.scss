@@ -1,0 +1,109 @@
+.authors {
+  font-size: 14px;
+  color: #828282;
+}
+
+.poster-button:before {
+  content: '🖼️ ';
+}
+
+.read-paper-button:before {
+    content: '📝 ';
+}
+
+.read-more-button:before {
+    content: '➤ ';
+}
+
+.blue-button {
+    display: inline-block;
+    margin-bottom: 0.25em;
+    padding: 0.5em 1em;
+    color: #fff !important;
+    font-family: $sans-serif;
+    font-size: $type-size-6;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: $primary-color;
+    border: 0 !important;
+    border-radius: $border-radius;
+    cursor: pointer;
+
+    &:hover {
+      background-color: mix(white, #000, 20%);
+    }
+
+    .icon {
+      margin-right: 0.5em;
+    }
+
+    .icon + .hidden {
+      margin-left: -0.5em; /* override for hidden text*/
+    }
+
+    /* fills width of parent container */
+
+    &--block {
+      display: block;
+      width: 100%;
+
+      + .btn--block {
+        margin-top: 0.25em;
+      }
+    }
+
+    /* for dark backgrounds */
+
+    &--inverse {
+      color: $gray !important;
+      border: 1px solid $light-gray !important; /* override*/
+      background-color: #fff;
+
+      &:hover {
+        color: #fff !important;
+        border-color: $gray;
+      }
+    }
+
+    /* information */
+    background-color: $info-color;
+
+    &:hover {
+        background-color: mix(#000, $info-color, 20%);
+    }
+}
+
+.page__inner-wrap {
+    li {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    p {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
+
+figure {
+    float: right;
+    // width: 30%;
+    text-align: center;
+    font-style: italic;
+    // font-size: smaller;
+    text-indent: 0;
+    // border: thin silver solid;
+    margin: 0.5em;
+    // padding: 0.5em;
+}
+
+figcaption {
+    width: 100%;
+}
+
+.publication-conference {
+    color: $accent1-color;
+    font-style: italic;
+    font-weight: bold;
+}

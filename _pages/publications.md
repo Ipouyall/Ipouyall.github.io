@@ -5,6 +5,17 @@ permalink: /publications/
 author_profile: true
 ---
 
+body, td {
+   font-size: 14px;
+}
+code.r{
+  font-size: 20px;
+}
+pre {
+  font-size: 20px
+}
+</style>
+
 {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
 {% endif %}

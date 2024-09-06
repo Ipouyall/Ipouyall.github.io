@@ -5,6 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
+<style>
 body, td {
    font-size: 14px;
 }

@@ -25,16 +25,16 @@ My primary research interest lies in the area of
 - Probability theory and Statistics
 
 
-
 News
 ======
 
-- **2024.03**: Awarded the _Gold Medal_ for achieving the **1$^{st}$ rank** at the **28$^{th}$ Iranian University Scientific Olympiad** (Computer Science).
+
+- **2024.03**: Awarded the _Gold Medal_ for achieving the **1st rank** at the **28th Scientific Olympiad University Students of Iranian** (Computer Science branch).
 
 - **2024.03**: Our paper, "[uTeBC-NLP at SemEval-2024 Task 9: Can LLMs be Lateral Thinkers?](https://aclanthology.org/2024.semeval-1.251/)," has been accepted by [SemEval@NAACL 2024](https://semeval.github.io/SemEval2024/).
 
 - **2024.02**: Our paper, "[Benchmarking Large Language Models for Persian: A Preliminary Study Focusing on ChatGPT](https://aclanthology.org/2024.lrec-main.197/)," has been accepted for presentation at [LREC-CoLing 2024](https://lrec-coling-2024.org/).
 
-- **2022.10**: Ranked **2$^{nd}$** at the University of Tehran, Computer Engineering, School of ECE.
+- **2022.10**: Ranked **2nd** at the University of Tehran, Computer Engineering, School of ECE.
 
 

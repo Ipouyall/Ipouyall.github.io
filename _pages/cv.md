@@ -21,4 +21,4 @@ pre {
 }
 </style>
 
-You can find my CV [here](CV.pdf).
+You can find my CV [here](/files/Pouya_Sadeghi_CV.pdf).

@@ -30,7 +30,7 @@ News
 
 - **2024.08**: I joined **Fatima Fellow** as a fellow, working on *Multilingual Multicultural Red Teaming of LLMs*.
 
-- **2024.08**: I joined **Singapore Management University (SMU)** as a Visiting Research Student, working on *Formal Methods for Safe and Trustworthy Probabilistic Systems* under the supervision of [Prof. Djordje Zikelic](https://djordjezikelic.github.io).
+- **2024.08**: I joined **Singapore Management University (SMU)** as a Visiting Research Student, working on *Formal Methods for Safe and Trustworthy Probabilistic Systems*.
 
 - **2024.03**: Awarded the _Gold Medal_ for achieving **1st place** at the **28th Scientific Olympiad of University Students of Iran** (Computer Science branch).
 

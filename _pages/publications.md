@@ -21,7 +21,7 @@ pre {
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
 {% endif %}
 
-# <span style="color:grey">2024</span>
+# <span style="color:lightgrey">2024</span>
 
 4. uTeBC-NLP at SemEval-2024 Task 9: Can LLMs be Lateral Thinkers? <br/>
 Proceedings of the 18th International Workshop on Semantic Evaluation (**SemEval-2024**) <br/>

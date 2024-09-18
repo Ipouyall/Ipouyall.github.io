@@ -197,7 +197,8 @@ body:hover .visually-hidden button {
 
 .social-icons {
   .fa {
-    color: #000;
+    //color: #000;
+    color: $text-color;
   }
 
   .fa-bluesky,
@@ -230,7 +231,8 @@ body:hover .visually-hidden button {
   .fa-github,
   .fa-github-alt,
   .fa-github-square {
-    color: $github-color;
+    //color: $github-color;
+    color: $text-color;
   }
 
   .fa-google-plus,

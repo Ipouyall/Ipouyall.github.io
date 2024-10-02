@@ -13,24 +13,25 @@ author_profile: true
   <style>
     /* General Page Styling */
     body {
-      background-color: #0D1117; /* Dark background to match the site's theme */
-      color: #C9D1D9; /* Light gray text */
+      background-color: #0b0c10; /* Matches the background color */
+      color: #f8f8ff; /* Light text color */
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
 
     a {
-      color: #58A6FF; /* Teal/Cyan links */
+      color: #66fcf1; /* Info color */
       text-decoration: none;
     }
 
     a:hover {
+      color: mix(#000, #66fcf1, 25%); /* Darker version of link color on hover */
       text-decoration: underline;
     }
 
     h1 {
-      color: #C9D1D9;
+      color: #f8f8ff; /* Matches the text color */
       text-align: center;
       padding-top: 20px;
       font-size: 2em;
@@ -47,21 +48,24 @@ author_profile: true
     }
 
     .timeline:before {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    content: ' ';
-    display: block;
-    width: 4px; /* Adjusted width for a thinner line */
-    height: 100%;
-    margin-left: -2px; /* Half of the width to center the line */
-    background: #30363D; /* Subtle gray for the timeline line */
-    background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, #30363D 8%, #30363D 92%, rgba(80,80,80,0) 100%);
-    z-index: 5;
-  }
+      position: absolute;
+      left: 50%;
+      top: 0;
+      content: ' ';
+      display: block;
+      width: 4px;
+      height: 100%;
+      margin-left: -2px;
+      background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, #424242 8%, #424242 92%, rgba(80,80,80,0) 100%); /* Updated timeline line color */
+      z-index: 5;
+    }
 
     .timeline li {
       padding: 1em 0;
+    }
+
+    .timeline li.clicked .detail {
+      display: block;
     }
 
     .timeline li:after {
@@ -94,8 +98,8 @@ author_profile: true
     .flag {
       position: relative;
       display: inline;
-      background: #161B22; /* Dark gray background for flags */
-      color: #C9D1D9; /* Light text on the flags */
+      background: #1f2833; !* Matches the code-background-color-dark *!*/
+      color: #f8f8ff; /* Light text on the flags */
       padding: 6px 10px;
       border-radius: 5px;
       font-weight: 600;
@@ -120,9 +124,9 @@ author_profile: true
       width: 12px;
       height: 12px;
       margin-top: -10px;
-      background: #161B22; /* Dark circle for points */
+      background: #1f2833; /* Dark background circle */
       border-radius: 10px;
-      border: 4px solid #58A6FF; /* Teal/Cyan border for accents */
+      border: 4px solid #66fcf1; /* Teal accent border */
       z-index: 10;
     }
 
@@ -139,7 +143,7 @@ author_profile: true
       width: 0;
       margin-top: -8px;
       border: solid transparent;
-      border-left-color: #161B22;
+      border-left-color: #1f2833;
       border-width: 8px;
       pointer-events: none;
     }
@@ -153,7 +157,7 @@ author_profile: true
       width: 0;
       margin-top: -8px;
       border: solid transparent;
-      border-right-color: #161B22;
+      border-right-color: #1f2833;
       border-width: 8px;
       pointer-events: none;
     }
@@ -162,7 +166,7 @@ author_profile: true
       display: inline;
       line-height: 1em;
       font-size: 0.66666em;
-      color: #58A6FF; /* Teal/Cyan for time */
+      color: #66fcf1; /* Success color for time */
       vertical-align: middle;
     }
 
@@ -177,17 +181,45 @@ author_profile: true
     .time {
       display: inline-block;
       padding: 4px 6px;
-      background: #161B22; /* Match flag background for time */
+      background: #1f2833; /* Dark background for time */
     }
 
     .desc {
       margin: 1em 0.75em 0 0;
-      font-size: 0.77777em;
+      font-size: 0.77em;
       line-height: 1.5em;
+      font-weight: bold;
+      color: #f8f8ff; /* Light text color */
     }
 
     .direction-r .desc {
       margin: 1em 0 0 0.75em;
+    }
+
+    .detail {
+      margin: 1em 0.75em 0 0;
+      font-size: 0.7em;
+      line-height: 1.3em;
+      color: #f8f8ff; /* Light text color */
+      display: none;
+    }
+
+    .direction-r .detail {
+      margin: 1em 0 0 0.75em;
+    }
+
+    .hover-text {
+      color: rgba(174, 237, 229, 0.7); /* Success color */
+      font-size: 0.75em;
+      visibility: hidden;
+      position: relative;
+      bottom: 20px; /* Position it above the flag */
+      display: block;
+      text-align: center;
+    }
+
+    .timeline li:hover .hover-text {
+      visibility: visible;
     }
 
     /* Media Queries */
@@ -240,7 +272,7 @@ author_profile: true
       }
 
       .flag {
-        background: #161B22; /* Dark background for mobile too */
+        background: #1f2833;
         z-index: 15;
       }
 
@@ -253,9 +285,9 @@ author_profile: true
         width: 12px;
         height: 12px;
         margin-left: -9px;
-        background: #161B22; /* Dark circle */
+        background: #1f2833;
         border-radius: 10px;
-        border: 4px solid #58A6FF; /* Accent border */
+        border: 4px solid #66fcf1;
         z-index: 10;
       }
 
@@ -268,7 +300,7 @@ author_profile: true
         width: 0;
         margin-left: -8px;
         border: solid transparent;
-        border-bottom-color: #161B22;
+        border-bottom-color: #1f2833;
         border-width: 8px;
         pointer-events: none;
       }
@@ -283,11 +315,11 @@ author_profile: true
       .desc {
         margin: 1em 0;
         padding: 1em;
-        background: #21262D; /* Slightly lighter for description background */
         box-shadow: 0 0 1px rgba(0,0,0,0.20);
         z-index: 15;
       }
     }
+
   </style>
 </head>
 <body>
@@ -302,65 +334,89 @@ author_profile: true
       <li>
         <div class="direction-r">
           <div class="flag-wrapper">
-            <span class="flag">Fatima Fellow</span>
-            <span class="time-wrapper"><span class="time">2024.08</span></span>
+            <span class="hover-text">Click for more</span>
+            <span class="flag">Fatima Fellowship</span>
+            <span class="time-wrapper"><span class="time">Aug 2024</span></span>
           </div>
-          <div class="desc"><b>Fellow</b> <br/> Working on Multilingual Multicultural Red Teaming of LLMs.</div>
+          <div class="desc">Fellow</div>
+          <div class="detail">Working on Multilingual Multicultural Red Teaming of LLMs.</div>
         </div>
       </li>
 
       <li>
         <div class="direction-l">
           <div class="flag-wrapper">
+            <span class="hover-text">Click for more</span>
             <span class="flag">Singapore Management University</span>
-            <span class="time-wrapper"><span class="time">2024.08</span></span>
+            <span class="time-wrapper"><span class="time">Aug 2024</span></span>
           </div>
-          <div class="desc"><b>Visiting Research Student</b> <br/> Working on Formal Methods for Safe and Trustworthy Probabilistic Systems under the supervision of <br> <a href="https://djordjezikelic.github.io" target="_blank">Prof. Djordje Zikelic</a>.</div>
+          <div class="desc">Visiting Research Student</div>
+          <div class="detail">Working on Formal Methods for Safe and Trustworthy Probabilistic Systems under the supervision of <br> <a href="https://djordjezikelic.github.io" target="_blank">Prof. Djordje Zikelic</a>.</div>
         </div>
       </li>
 
       <li>
         <div class="direction-r">
           <div class="flag-wrapper">
-            <span class="flag">28th Scientific Olympiad</span>
-            <span class="time-wrapper"><span class="time">2024.03</span></span>
+            <span class="hover-text">Click for more</span>
+            <span class="flag">University of Tehran</span>
+            <span class="time-wrapper"><span class="time">Apr 2023</span></span>
           </div>
-          <div class="desc"><b>Gold Medal</b> <br/> Achieved 1st place in the Computer Science branch.</div>
+          <div class="desc">Research Assistance (UT-NLP lab)</div>
+          <div class="detail">[Apr 2023 - Present] Under the supervision of <br> <a href="https://yyaghoobzadeh.github.io" target="_blank">Prof. Yadollah Yaghoobzadeh</a>.</div>
+          <div class="desc">Research Assistance (Intelligent Systems lab)</div>
+          <div class="detail">[Summer 2023] Under the supervision of <br> <a href="https://scholar.google.com/citations?user=E-QpN74AAAAJ&hl=en" target="_blank">Prof. Azadeh Shakery</a>.</div>
         </div>
       </li>
 
       <li>
         <div class="direction-l">
           <div class="flag-wrapper">
-            <span class="flag">University of Tehran</span>
-            <span class="time-wrapper"><span class="time">2022.10</span></span>
+            <span class="hover-text">Click for more</span>
+            <span class="flag">Macquarie University</span>
+            <span class="time-wrapper"><span class="time">Apr 2023</span></span>
           </div>
-          <div class="desc"><b>Ranked 2nd</b> <br/> In Computer Engineering, School of ECE.</div>
+          <div class="desc">Research Assistance</div>
+          <div class="detail">At the DataScience lab, under the supervision of <br> <a href="https://researchers.mq.edu.au/en/persons/amin-beheshti" target="_blank">Prof. Amin Beheshti</a>.</div>
         </div>
       </li>
 
       <li>
         <div class="direction-r">
           <div class="flag-wrapper">
-            <span class="flag">University of Tehran</span>
-            <span class="time-wrapper"><span class="time">2020.09</span></span>
+            <span class="hover-text">Click for more</span>
+            <span class="flag">Sotoon</span>
+            <span class="time-wrapper"><span class="time">Jul 2022</span></span>
           </div>
-          <div class="desc"><b>Bachelor of Science</b> <br/> Started undergraduate studies in Computer Engineering.</div>
+          <div class="desc">Site Reliability Engineering</div>
+          <div class="detail">[Jul 2022 - Sep 2022] Site Reliability Engineering Intern at Cloud Computing department.</div>
+          <div class="desc">Junior Software Engineer</div>
+          <div class="detail">[Sep 2022 - Mar 2023] Junior Software Engineer at Artificial Intelligence department.</div>
         </div>
       </li>
 
       <li>
         <div class="direction-l">
           <div class="flag-wrapper">
-            <span class="flag">University Entry Exam</span>
-            <span class="time-wrapper"><span class="time">2020.07</span></span>
+            <span class="hover-text">Click for more</span>
+            <span class="flag">University of Tehran</span>
+            <span class="time-wrapper"><span class="time">Sep 2020</span></span>
           </div>
-          <div class="desc"><b>Ranked 49th</b> <br/> In the national University Entry Exam (Konkour).</div>
+          <div class="desc">Bachelor of Science in Computer Engineering</div>
+          <div class="detail">Started undergraduate studies in Computer Engineering.</div>
         </div>
       </li>
 
     </ul>
   </div>
+
+<script>
+    document.querySelectorAll('.timeline li').forEach(function(item) {
+      item.addEventListener('click', function() {
+        this.classList.toggle('clicked');
+      });
+    });
+</script>
 
 </body>
 </html>

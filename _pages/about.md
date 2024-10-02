@@ -41,6 +41,4 @@ News
 - **2022.10**: Ranked **2nd** at the University of Tehran, Computer Engineering, School of ECE.
 
 
-![timeline](https://ipouyall.github.io/timeline)
-
-[//]: # (<iframe src="https://ipouyall.github.io/timeline" width="600" height="400" frameborder="0"></iframe>)
+<iframe src="https://ipouyall.github.io/timeline" width="600" height="400" frameborder="0"></iframe>

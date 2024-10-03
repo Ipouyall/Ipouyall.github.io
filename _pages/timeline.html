@@ -1,11 +1,12 @@
 ---
-layout:
+layout: archive
 title: ""
 permalink: /timeline
 author_profile: true
 ---
 
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,25 +14,30 @@ author_profile: true
   <style>
     /* General Page Styling */
     body {
-      background-color: #0b0c10; /* Matches the background color */
-      color: #f8f8ff; /* Light text color */
+      background-color: #0b0c10;
+      /* Matches the background color */
+      color: #f8f8ff;
+      /* Light text color */
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
 
     a {
-      color: #66fcf1; /* Info color */
+      color: #66fcf1;
+      /* Info color */
       text-decoration: none;
     }
 
     a:hover {
-      color: mix(#000, #66fcf1, 25%); /* Darker version of link color on hover */
+      color: mix(#000, #66fcf1, 25%);
+      /* Darker version of link color on hover */
       text-decoration: underline;
     }
 
     h1 {
-      color: #f8f8ff; /* Matches the text color */
+      color: #f8f8ff;
+      /* Matches the text color */
       text-align: center;
       padding-top: 20px;
       font-size: 2em;
@@ -56,8 +62,7 @@ author_profile: true
       width: 4px;
       height: 100%;
       margin-left: -2px;
-      background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, #424242 8%, #424242 92%, rgba(80,80,80,0) 100%); /* Updated timeline line color */
-      z-index: 5;
+      background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, #424242 8%, #424242 92%, rgba(80, 80, 80, 0) 100%);
     }
 
     .timeline li {
@@ -91,15 +96,18 @@ author_profile: true
 
     .flag-wrapper {
       position: relative;
-      display: inline-block;
+      display: flex;
+      align-items: center;
       text-align: center;
     }
 
     .flag {
+      max-width: 200px;
       position: relative;
-      display: inline;
-      background: #1f2833; !* Matches the code-background-color-dark *!*/
-      color: #f8f8ff; /* Light text on the flags */
+      display: inline-block;
+      background: #1f2833;
+      color: #f8f8ff;
+      /* Light text on the flags */
       padding: 6px 10px;
       border-radius: 5px;
       font-weight: 600;
@@ -107,11 +115,11 @@ author_profile: true
     }
 
     .direction-l .flag {
-      box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+      box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
     }
 
     .direction-r .flag {
-      box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
     }
 
     .direction-l .flag:before,
@@ -124,10 +132,11 @@ author_profile: true
       width: 12px;
       height: 12px;
       margin-top: -10px;
-      background: #1f2833; /* Dark background circle */
+      background: #1f2833;
+      /* Dark background circle */
       border-radius: 10px;
-      border: 4px solid #66fcf1; /* Teal accent border */
-      z-index: 10;
+      border: 4px solid #66fcf1;
+      /* Teal accent border */
     }
 
     .direction-r .flag:before {
@@ -166,22 +175,24 @@ author_profile: true
       display: inline;
       line-height: 1em;
       font-size: 0.66666em;
-      color: #66fcf1; /* Success color for time */
+      color: #66fcf1;
+      /* Success color for time */
       vertical-align: middle;
     }
 
-    .direction-l .time-wrapper {
-      float: left;
+    .direction-l .flag-wrapper {
+      flex-direction: row-reverse;
     }
 
-    .direction-r .time-wrapper {
-      float: right;
+    .direction-r .flag-wrapper {
+      flex-direction: row;
     }
 
     .time {
       display: inline-block;
       padding: 4px 6px;
-      background: #1f2833; /* Dark background for time */
+      background: #1f2833;
+      /* Dark background for time */
     }
 
     .desc {
@@ -189,7 +200,8 @@ author_profile: true
       font-size: 0.77em;
       line-height: 1.5em;
       font-weight: bold;
-      color: #f8f8ff; /* Light text color */
+      color: #f8f8ff;
+      /* Light text color */
     }
 
     .direction-r .desc {
@@ -200,7 +212,8 @@ author_profile: true
       margin: 1em 0.75em 0 0;
       font-size: 0.7em;
       line-height: 1.3em;
-      color: #f8f8ff; /* Light text color */
+      color: #f8f8ff;
+      /* Light text color */
       display: none;
     }
 
@@ -209,13 +222,14 @@ author_profile: true
     }
 
     .hover-text {
-      color: rgba(174, 237, 229, 0.7); /* Success color */
+      color: rgba(174, 237, 229, 0.7);
+      /* Success color */
       font-size: 0.75em;
+      position: absolute;
       visibility: hidden;
-      position: relative;
-      bottom: 20px; /* Position it above the flag */
-      display: block;
-      text-align: center;
+      top: -20px;
+      left: 50%;
+      transform: translate(-50%, 0);
     }
 
     .timeline li:hover .hover-text {
@@ -261,7 +275,8 @@ author_profile: true
         padding: 2em 0;
       }
 
-      .direction-l, .direction-r {
+      .direction-l,
+      .direction-r {
         float: none;
         width: 100%;
         text-align: center;
@@ -273,10 +288,21 @@ author_profile: true
 
       .flag {
         background: #1f2833;
-        z-index: 15;
+          max-width: 300px;
       }
 
-      .direction-l .flag:before, .direction-r .flag:before {
+      .direction-r .flag-wrapper {
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .direction-l .flag-wrapper {
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .direction-l .flag:before,
+      .direction-r .flag:before {
         position: absolute;
         top: -30px;
         left: 50%;
@@ -288,10 +314,10 @@ author_profile: true
         background: #1f2833;
         border-radius: 10px;
         border: 4px solid #66fcf1;
-        z-index: 10;
       }
 
-      .direction-l .flag:after, .direction-r .flag:after {
+      .direction-l .flag:after,
+      .direction-r .flag:after {
         content: "";
         position: absolute;
         left: 50%;
@@ -305,23 +331,13 @@ author_profile: true
         pointer-events: none;
       }
 
-      .time-wrapper {
-        display: block;
-        position: relative;
-        margin: 4px 0 0 0;
-        z-index: 14;
-      }
-
       .desc {
-        margin: 1em 0;
-        padding: 1em;
-        box-shadow: 0 0 1px rgba(0,0,0,0.20);
-        z-index: 15;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
       }
     }
-
   </style>
 </head>
+
 <body>
 
   <h1>Timeline</h1>
@@ -334,8 +350,8 @@ author_profile: true
       <li>
         <div class="direction-r">
           <div class="flag-wrapper">
-            <span class="hover-text">Click for more</span>
             <span class="flag">Fatima Fellowship</span>
+            <span class="hover-text">Click for more</span>
             <span class="time-wrapper"><span class="time">Aug 2024</span></span>
           </div>
           <div class="desc">Fellow</div>
@@ -346,60 +362,68 @@ author_profile: true
       <li>
         <div class="direction-l">
           <div class="flag-wrapper">
-            <span class="hover-text">Click for more</span>
             <span class="flag">Singapore Management University</span>
+            <span class="hover-text">Click for more</span>
             <span class="time-wrapper"><span class="time">Aug 2024</span></span>
           </div>
           <div class="desc">Visiting Research Student</div>
-          <div class="detail">Working on Formal Methods for Safe and Trustworthy Probabilistic Systems under the supervision of <br> <a href="https://djordjezikelic.github.io" target="_blank">Prof. Djordje Zikelic</a>.</div>
+          <div class="detail">Working on Formal Methods for Safe and Trustworthy Probabilistic Systems under the
+            supervision of <a href="https://djordjezikelic.github.io" target="_blank">Prof. Djordje Zikelic</a>.</div>
         </div>
       </li>
 
       <li>
         <div class="direction-r">
           <div class="flag-wrapper">
-            <span class="hover-text">Click for more</span>
             <span class="flag">University of Tehran</span>
+            <span class="hover-text">Click for more</span>
             <span class="time-wrapper"><span class="time">Apr 2023</span></span>
           </div>
           <div class="desc">Research Assistance (UT-NLP lab)</div>
-          <div class="detail">[Apr 2023 - Present] Under the supervision of <br> <a href="https://yyaghoobzadeh.github.io" target="_blank">Prof. Yadollah Yaghoobzadeh</a>.</div>
+          <div class="detail">[Apr 2023 - Present] Under the supervision of <a href="https://yyaghoobzadeh.github.io"
+              target="_blank">Prof. Yadollah Yaghoobzadeh</a>.</div>
           <div class="desc">Research Assistance (Intelligent Systems lab)</div>
-          <div class="detail">[Summer 2023] Under the supervision of <br> <a href="https://scholar.google.com/citations?user=E-QpN74AAAAJ&hl=en" target="_blank">Prof. Azadeh Shakery</a>.</div>
+          <div class="detail">[Summer 2023] Under the supervision of <a
+              href="https://scholar.google.com/citations?user=E-QpN74AAAAJ&hl=en" target="_blank">Prof. Azadeh
+              Shakery</a>.</div>
         </div>
       </li>
 
       <li>
         <div class="direction-l">
           <div class="flag-wrapper">
-            <span class="hover-text">Click for more</span>
             <span class="flag">Macquarie University</span>
+            <span class="hover-text">Click for more</span>
             <span class="time-wrapper"><span class="time">Apr 2023</span></span>
           </div>
           <div class="desc">Research Assistance</div>
-          <div class="detail">At the DataScience lab, under the supervision of <br> <a href="https://researchers.mq.edu.au/en/persons/amin-beheshti" target="_blank">Prof. Amin Beheshti</a>.</div>
+          <div class="detail">At the DataScience lab, under the supervision of <a
+              href="https://researchers.mq.edu.au/en/persons/amin-beheshti" target="_blank">Prof. Amin Beheshti</a>.
+          </div>
         </div>
       </li>
 
       <li>
         <div class="direction-r">
           <div class="flag-wrapper">
-            <span class="hover-text">Click for more</span>
             <span class="flag">Sotoon</span>
+            <span class="hover-text">Click for more</span>
             <span class="time-wrapper"><span class="time">Jul 2022</span></span>
           </div>
           <div class="desc">Site Reliability Engineering</div>
-          <div class="detail">[Jul 2022 - Sep 2022] Site Reliability Engineering Intern at Cloud Computing department.</div>
+          <div class="detail">[Jul 2022 - Sep 2022] Site Reliability Engineering Intern at Cloud Computing department.
+          </div>
           <div class="desc">Junior Software Engineer</div>
-          <div class="detail">[Sep 2022 - Mar 2023] Junior Software Engineer at Artificial Intelligence department.</div>
+          <div class="detail">[Sep 2022 - Mar 2023] Junior Software Engineer at Artificial Intelligence department.
+          </div>
         </div>
       </li>
 
       <li>
         <div class="direction-l">
           <div class="flag-wrapper">
-            <span class="hover-text">Click for more</span>
             <span class="flag">University of Tehran</span>
+            <span class="hover-text">Click for more</span>
             <span class="time-wrapper"><span class="time">Sep 2020</span></span>
           </div>
           <div class="desc">Bachelor of Science in Computer Engineering</div>
@@ -410,13 +434,14 @@ author_profile: true
     </ul>
   </div>
 
-<script>
-    document.querySelectorAll('.timeline li').forEach(function(item) {
-      item.addEventListener('click', function() {
+  <script>
+    document.querySelectorAll('.timeline li').forEach(function (item) {
+      item.addEventListener('click', function () {
         this.classList.toggle('clicked');
       });
     });
-</script>
+  </script>
 
 </body>
+
 </html>

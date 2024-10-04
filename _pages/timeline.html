@@ -13,6 +13,12 @@ author_profile: true
   <title>Timeline</title>
   <style>
     /* General Page Styling */
+    *,
+    ::before,
+    ::after {
+      box-sizing: border-box;
+    }
+
     body {
       background-color: #0b0c10;
       color: #f8f8ff;
@@ -63,10 +69,6 @@ author_profile: true
 
     .timeline li {
       padding: 1em 0;
-    }
-
-    .timeline li.clicked .detail {
-      display: block;
     }
 
     .timeline li:after {
@@ -124,14 +126,12 @@ author_profile: true
       right: -40px;
       content: ' ';
       display: block;
-      width: 12px;
-      height: 12px;
+      width: 20px;
+      height: 20px;
       margin-top: -10px;
       background: #1f2833;
-      /* Dark background circle */
       border-radius: 10px;
       border: 4px solid #66fcf1;
-      /* Teal accent border */
     }
 
     .direction-r .flag:before {
@@ -190,7 +190,7 @@ author_profile: true
     }
 
     .desc {
-      margin: 1em 0.75em 0 0;
+      margin: 0.5em 0.75em 0 0;
       font-size: 0.77em;
       line-height: 1.5em;
       font-weight: bold;
@@ -199,19 +199,26 @@ author_profile: true
     }
 
     .direction-r .desc {
-      margin: 1em 0 0 0.75em;
+      margin: 0.5em 0 0 0.75em;
     }
 
     .detail {
-      margin: 1em 0.75em 0 0;
+      margin: 0em 0.75em 0 0;
       font-size: 0.7em;
       line-height: 1.3em;
       color: #d2dde3;
-      display: none;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.5s ease-out;
     }
 
     .direction-r .detail {
-      margin: 1em 0 0 0.75em;
+      margin: 0em 0 0 0.75em;
+    }
+
+    .timeline li.clicked .detail {
+      height: auto;
+      overflow: visible;
     }
 
     .hover-text {
@@ -280,7 +287,7 @@ author_profile: true
 
       .flag {
         background: #1f2833;
-          max-width: 300px;
+        max-width: 300px;
       }
 
       .direction-r .flag-wrapper {
@@ -295,17 +302,11 @@ author_profile: true
 
       .direction-l .flag:before,
       .direction-r .flag:before {
-        position: absolute;
         top: -30px;
         left: 50%;
-        content: ' ';
-        display: block;
-        width: 12px;
-        height: 12px;
-        margin-left: -9px;
-        background: #1f2833;
-        border-radius: 10px;
-        border: 4px solid #66fcf1;
+        width: 16px;
+        height: 16px;
+        margin-left: -8px;
       }
 
       .direction-l .flag:after,
@@ -324,7 +325,21 @@ author_profile: true
       }
 
       .desc {
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+        margin: 0.5em 0 0 0;
+        text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.90), 0px 0px 5px rgba(0, 0, 0, 0.80);
+      }
+
+      .direction-r .desc {
+        margin: 0.5em 0 0 0;
+      }
+
+      .detail {
+        margin: 0;
+        text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.90), 0px 0px 5px rgba(0, 0, 0, 0.80);
+      }
+
+      .direction-r .detail {
+        margin: 0;
       }
     }
   </style>
@@ -344,7 +359,7 @@ author_profile: true
           <div class="flag-wrapper">
             <span class="flag">Fatima Fellowship</span>
             <span class="hover-text">Click for more</span>
-            <span class="time-wrapper"><span class="time">Aug 2024</span></span>
+            <span class="time-wrapper"><span class="time">2024-2025</span></span>
           </div>
           <div class="desc">Fellow</div>
           <div class="detail">Working on Multilingual Multicultural Red Teaming of LLMs.</div>
@@ -359,8 +374,42 @@ author_profile: true
             <span class="time-wrapper"><span class="time">2024-2025</span></span>
           </div>
           <div class="desc">Visiting Research Student</div>
-          <div class="detail">[Aug 2024 - Present] Working on Formal Methods for Safe and Trustworthy Probabilistic Systems under the
+          <div class="detail">[Aug 2024 - Present] Working on Formal Methods for Safe and Trustworthy Probabilistic
+            Systems under the
             supervision of <a href="https://djordjezikelic.github.io" target="_blank">Prof. Djordje Zikelic</a>.</div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag">New Paper(s) Accepted</span>
+            <span class="hover-text">Click for more</span>
+            <span class="time-wrapper"><span class="time">2024</span></span>
+          </div>
+          <div class="desc">1 * LREC-COLING 2024</div>
+          <div class="detail">Paper titled "Benchmarking Large Language Models for Persian: A Preliminary Study Focusing
+            on ChatGPT" is accepted at LREC-COLING 2024!</div>
+          <div class="desc">3 * SemEval@NAACL 2024</div>
+          <div class="detail">
+            (1) uTeBC-NLP at SemEval-2024 Task 9: Can LLMs be Lateral Thinkers?<br>
+            (2) SLPL SHROOM at SemEval2024 Task 06: A comprehensive study on models ability to detect hallucination<br>
+            (3) Sharif-MGTD at SemEval-2024 Task 8: A Transformer-Based Approach to Detect Machine Generated Text
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="flag">Macquarie University</span>
+            <span class="hover-text">Click for more</span>
+            <span class="time-wrapper"><span class="time">2023</span></span>
+          </div>
+          <div class="desc">Research Assistance</div>
+          <div class="detail">[Apr 2023 - Oct 2023] At the DataScience lab, under the supervision of <a
+              href="https://researchers.mq.edu.au/en/persons/amin-beheshti" target="_blank">Prof. Amin Beheshti</a>.
+          </div>
         </div>
       </li>
 
@@ -386,11 +435,14 @@ author_profile: true
             <span class="time-wrapper"><span class="time">2022-2023</span></span>
           </div>
           <div class="desc">Top Performer in the Algorithm Design Competition</div>
-          <div class="detail">[Apr 2022] Ranked among the top participants in an algorithm design competition, organized as part of the entry process for Sotoon, leading to my selection as one of the top performers.</div>
+          <div class="detail">[Apr 2022] Ranked among the top participants in an algorithm design competition, organized
+            as part of the entry process for Sotoon, leading to my selection as one of the top performers.</div>
           <div class="desc">Site Reliability Engineering</div>
-          <div class="detail">[Jul 2022 - Sep 2022] Site Reliability Engineering Intern at Cloud Computing department.</div>
+          <div class="detail">[Jul 2022 - Sep 2022] Site Reliability Engineering Intern at Cloud Computing department.
+          </div>
           <div class="desc">Junior Software Engineer</div>
-          <div class="detail">[Sep 2022 - Mar 2023] Junior Software Engineer at Artificial Intelligence department.</div>
+          <div class="detail">[Sep 2022 - Mar 2023] Junior Software Engineer at Artificial Intelligence department.
+          </div>
         </div>
       </li>
 
@@ -404,7 +456,8 @@ author_profile: true
           <div class="desc">Bachelor of Science in Computer Engineering</div>
           <div class="detail">[2020-2025] Started undergraduate studies in Computer Engineering.</div>
           <div class="desc">Ranked 2nd among Computer Science Students</div>
-          <div class="detail">[second year] Ranked 2nd among 110 Computer Engineering students of EECE Department with GPA 19.45.</div>
+          <div class="detail">[second year] Ranked 2nd among 110 Computer Engineering students of EECE Department with
+            GPA 19.45.</div>
           <div class="desc">Research Assistance (UT-NLP lab)</div>
           <div class="detail">[Apr 2023 - Present] Under the supervision of <a href="https://yyaghoobzadeh.github.io"
               target="_blank">Prof. Yadollah Yaghoobzadeh</a>.</div>
@@ -416,16 +469,17 @@ author_profile: true
       </li>
 
       <li>
-    <div class="direction-l">
-      <div class="flag-wrapper">
-        <span class="flag">National University Entrance Exam</span>
-        <span class="hover-text">Click for more</span>
-        <span class="time-wrapper"><span class="time">2020</span></span>
-      </div>
-      <div class="desc">Top 0.1% Nationwide</div>
-      <div class="detail">Ranked in the top 0.1% of participants in the Iranian National University Entrance Exam, among over one million participants.</div>
-    </div>
-  </li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="flag">National University Entrance Exam</span>
+            <span class="hover-text">Click for more</span>
+            <span class="time-wrapper"><span class="time">2020</span></span>
+          </div>
+          <div class="desc">Top 0.1% Nationwide</div>
+          <div class="detail">Ranked in the top 0.1% of participants in the Iranian National University Entrance Exam,
+            among over one million participants.</div>
+        </div>
+      </li>
 
     </ul>
   </div>
@@ -433,7 +487,30 @@ author_profile: true
   <script>
     document.querySelectorAll('.timeline li').forEach(function (item) {
       item.addEventListener('click', function () {
-        this.classList.toggle('clicked');
+        const details = this.querySelectorAll('.detail');
+
+        if (this.classList.contains('clicked')) {
+          [...details].reverse().forEach((detail, index) => {
+            setTimeout(() => {
+              detail.style.height = '0';
+              detail.style.overflow = 'hidden';
+            }, index * 200);
+          });
+          this.classList.remove('clicked');
+        } else {
+          details.forEach((detail, index) => {
+            detail.style.height = 'auto';
+            const detailHeight = detail.scrollHeight + 'px';
+
+            detail.style.height = '0';
+            detail.style.overflow = 'hidden';
+
+            setTimeout(() => {
+              detail.style.height = detailHeight;
+            }, index * 250);
+          });
+          this.classList.add('clicked');
+        }
       });
     });
   </script>

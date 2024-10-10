@@ -16,13 +16,7 @@ I have the pleasure of working with [Azadeh Shakery](https://ece.ut.ac.ir/en/~sh
 [Yadollah Yaghoobzadeh](https://yyaghoobzadeh.github.io/){:target="_blank"} on various research projects in the field of Natural Language Processing (NLP),
 Deep Learning (DL) and Explainable AI (XAI).
 
-
-My primary research interest lies in the area of
-- Natural Language Processing (NLP)
-- AI Safety and Ethics
-- Trustworthy AI
-- Explainable AI (XAI)
-- Formal methods for AI systems and Probabilistic Verification
+My primary research interest lies in the area of natural language processing (NLP) and Trustworthy AI.
 
 
 News

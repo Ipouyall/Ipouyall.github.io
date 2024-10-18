@@ -25,15 +25,14 @@ My research aims to make AI systems safer and more trustworthy and to find ways 
 
 At _Singapore Management University (SMU)_, my work centers on using formal methods, mathematical and logic-based techniques, to verify and validate AI systems. 
 These methods help ensure that AI behaves correctly and safely, even when there’s uncertainty involved. 
-While formal methods are powerful, they aren’t always easy to apply in practice. 
-That’s why it’s also important to create benchmarks and tools to evaluate AI systems, especially in multilingual and multicultural settings, to ensure safety for people worldwide. 
-This is a key part of my work as a _Fatima Fellow_, where we are developing new benchmarks for AI systems, particularly large language models (LLMs).
+While formal methods are powerful, they aren’t always easy to apply in practice, such as when dealing with large and complex AI systems.
+Using other evaluation methods, such as benchmarks, can help to evaluate AI systems and build systems that are not only powerful but also fair and safe for everyone. 
+The key part of my work as a _Fatima Fellow_ is to develop a new benchmarks for large language models (LLMs) in multilingual and multicultural settings, to ensure safety for people worldwide.
 
 LLMs are used in many applications today and have shown great promise in understanding and generating human language. 
 However, challenges remain, particularly when it comes to biases, fairness, trustworthiness, and democratization, where these large models are not always accessible to everyone to use or do research.
 A major challenge is ensuring that these models work well for people from different languages and cultures. Part of my research at the _University of Tehran_ is dedicated to benchmarking LLMs for Persian, developing models that better understand Persian language and culture, and examining how language changes as it passes through the layers of these models.
 
-By developing better evaluation methods and working on trustworthy AI, my goal is to help build systems that are not only powerful but also fair and safe for everyone.
 
 News
 ======

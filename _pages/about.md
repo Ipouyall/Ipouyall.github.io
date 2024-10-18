@@ -21,7 +21,7 @@ Research Flavor
 ======
 I am interested in doing research that can address real-world problems and provide practical solutions.
 As AI becomes more integrated into our daily lives, it raises important questions about safety, fairness, and trustworthiness.
-My research aims to make AI systems safer and more trustworthy and to find ways to measure their fairness and reliability. 
+My research aims to make AI systems safer, more trustworthy, more accessible, and to find ways to measure their fairness and reliability. 
 
 At _Singapore Management University (SMU)_, my work centers on using formal methods, mathematical and logic-based techniques, to verify and validate AI systems. 
 These methods help ensure that AI behaves correctly and safely, even when there’s uncertainty involved. 

@@ -48,4 +48,4 @@ News
 
 - **2024.02**: Our paper, "[Benchmarking Large Language Models for Persian: A Preliminary Study Focusing on ChatGPT](https://aclanthology.org/2024.lrec-main.197/)," has been accepted for presentation at [LREC-CoLing 2024](https://lrec-coling-2024.org/).
 
-- **2022.10**: Ranked **2nd** at the University of Tehran, Computer Engineering, School of ECE.
+- **2022.09**: I joined the **University of Tehran** to pursue my B.Sc. in Computer Engineering.

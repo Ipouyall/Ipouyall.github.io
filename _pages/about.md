@@ -39,6 +39,8 @@ My research aims to make AI systems safer, more trustworthy, more accessible, an
 News
 ======
 
+- **2024.12**: Our paper, "[Extending LLMs to New Languages: A Case Study of LLaMA and Persian Adaptation]()," has been accepted to [COLING 2025](https://coling2025.org).
+
 - **2024.08**: I joined **Fatima Fellow** as a fellow, working on *Multilingual Multicultural Red Teaming of LLMs*.
 
 - **2024.08**: I joined **Singapore Management University (SMU)** as a Visiting Research Student, working on *Formal Methods for Safe and Trustworthy Probabilistic Systems*.
@@ -47,6 +49,6 @@ News
 
 - **2024.03**: Our paper, "[uTeBC-NLP at SemEval-2024 Task 9: Can LLMs be Lateral Thinkers?](https://aclanthology.org/2024.semeval-1.251/)," along with two other papers, has been accepted to [SemEval@NAACL 2024](https://semeval.github.io/SemEval2024/).
 
-- **2024.02**: Our paper, "[Benchmarking Large Language Models for Persian: A Preliminary Study Focusing on ChatGPT](https://aclanthology.org/2024.lrec-main.197/)," has been accepted for presentation at [LREC-CoLing 2024](https://lrec-coling-2024.org/).
+- **2024.02**: Our paper, "[Benchmarking Large Language Models for Persian: A Preliminary Study Focusing on ChatGPT](https://aclanthology.org/2024.lrec-main.197/)," has been accepted to [LREC-CoLing 2024](https://lrec-coling-2024.org/).
 
 - **2022.09**: I joined the **University of Tehran** to pursue my B.Sc. in Computer Engineering.

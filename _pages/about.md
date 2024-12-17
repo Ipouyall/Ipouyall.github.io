@@ -12,20 +12,22 @@ About me
 Hi!
 I am *Pouya Sadeghi*, a computer engineering B.Sc. student at the 
 [Department of ECE](https://ece.ut.ac.ir/en/ece){:target="_blank"} at the [University of Tehran](https://ut.ac.ir/en){:target="_blank"}.
-I have the pleasure of working with [Azadeh Shakery](https://ece.ut.ac.ir/en/~shakery){:target="_blank"} and
-[Yadollah Yaghoobzadeh](https://yyaghoobzadeh.github.io/){:target="_blank"}. Currently, I am a visiting research student at 
-[Singapore Management University (SMU)](https://www.smu.edu.sg/){:target="_blank"} working under the supervision of [Prof. Djordje Zikelic](https://djordjezikelic.github.io)
-and a fellow at [Fatima Fellow](https://fatimafellow.com/){:target="_blank"}.
 
-[//]: # (Research Flavor)
+[//]: # (I have the pleasure of working with [Azadeh Shakery]&#40;https://ece.ut.ac.ir/en/~shakery&#41;{:target="_blank"} and)
 
-[//]: # (======)
+[//]: # ([Yadollah Yaghoobzadeh]&#40;https://yyaghoobzadeh.github.io/&#41;{:target="_blank"}. Currently, I am a visiting research student at )
 
-[//]: # (I am interested in doing research that can address real-world problems and provide practical solutions.)
+[//]: # ([Singapore Management University &#40;SMU&#41;]&#40;https://www.smu.edu.sg/&#41;{:target="_blank"} working under the supervision of [Prof. Djordje Zikelic]&#40;https://djordjezikelic.github.io&#41;)
 
-[//]: # (As AI becomes more integrated into our daily lives, it raises important questions about safety, fairness, and trustworthiness.)
+[//]: # (and a fellow at [Fatima Fellow]&#40;https://fatimafellow.com/&#41;{:target="_blank"}.)
 
-[//]: # (My research aims to make AI systems safer, more trustworthy, more accessible, and to find ways to measure their fairness and reliability. )
+Research Flavor
+
+======
+
+I am interested in doing research that can address real-world problems and provide practical solutions.
+As AI becomes more integrated into our daily lives, it raises important questions about safety, fairness, and trustworthiness.
+My research aims to make AI systems safer, more trustworthy, more accessible, and to find ways to measure their fairness and reliability. 
 
 [//]: # ()
 [//]: # (LLMs are used in many applications today and have shown great promise in understanding and generating human language. )

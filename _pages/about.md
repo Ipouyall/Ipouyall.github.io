@@ -22,7 +22,6 @@ I am *Pouya Sadeghi*, a computer engineering B.Sc. student at the
 [//]: # (and a fellow at [Fatima Fellow]&#40;https://fatimafellow.com/&#41;{:target="_blank"}.)
 
 Research Flavor
-
 ======
 
 I am interested in doing research that can address real-world problems and provide practical solutions.

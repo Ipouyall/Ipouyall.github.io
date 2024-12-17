@@ -17,21 +17,22 @@ I have the pleasure of working with [Azadeh Shakery](https://ece.ut.ac.ir/en/~sh
 [Singapore Management University (SMU)](https://www.smu.edu.sg/){:target="_blank"} working under the supervision of [Prof. Djordje Zikelic](https://djordjezikelic.github.io)
 and a fellow at [Fatima Fellow](https://fatimafellow.com/){:target="_blank"}.
 
-Research Flavor
-======
-I am interested in doing research that can address real-world problems and provide practical solutions.
-As AI becomes more integrated into our daily lives, it raises important questions about safety, fairness, and trustworthiness.
-My research aims to make AI systems safer, more trustworthy, more accessible, and to find ways to measure their fairness and reliability. 
+[//]: # (Research Flavor)
 
-At _Singapore Management University (SMU)_, my work centers on using formal methods, mathematical and logic-based techniques, to verify and validate AI systems. 
-These methods help ensure that AI behaves correctly and safely, even when there’s uncertainty involved. 
-While formal methods are powerful, they aren’t always easy to apply in practice, such as when dealing with large and complex AI systems.
-Using other evaluation methods, such as benchmarks, can help to evaluate AI systems and build systems that are not only powerful but also fair and safe for everyone. 
-The key part of my work as a _Fatima Fellow_ is to develop a new benchmarks for large language models (LLMs) in multilingual and multicultural settings, to ensure safety for people worldwide.
+[//]: # (======)
 
-LLMs are used in many applications today and have shown great promise in understanding and generating human language. 
-However, challenges remain, particularly when it comes to biases, fairness, trustworthiness, and democratization, where these large models are not always accessible to everyone to use or do research.
-A major challenge is ensuring that these models work well for people from different languages and cultures. Part of my research at the _University of Tehran_ is dedicated to benchmarking LLMs for Persian, developing models that better understand Persian language and culture, and examining how language changes as it passes through the layers of these models.
+[//]: # (I am interested in doing research that can address real-world problems and provide practical solutions.)
+
+[//]: # (As AI becomes more integrated into our daily lives, it raises important questions about safety, fairness, and trustworthiness.)
+
+[//]: # (My research aims to make AI systems safer, more trustworthy, more accessible, and to find ways to measure their fairness and reliability. )
+
+[//]: # ()
+[//]: # (LLMs are used in many applications today and have shown great promise in understanding and generating human language. )
+
+[//]: # (However, challenges remain, particularly when it comes to biases, fairness, trustworthiness, and democratization, where these large models are not always accessible to everyone to use or do research.)
+
+[//]: # (A major challenge is ensuring that these models work well for people from different languages and cultures. )
 
 
 News

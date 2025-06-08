@@ -10,34 +10,22 @@ redirect_from:
 About me
 ======
 Hi!
-I am *Pouya Sadeghi*, a computer engineering B.Sc. student at the 
-[Department of ECE](https://ece.ut.ac.ir/en/ece){:target="_blank"} at the [University of Tehran](https://ut.ac.ir/en){:target="_blank"}.
+I’m Pouya Sadeghi, 
+a recent Computer Engineering graduate with a passion for making AI systems more reliable, safe, and inclusive.
 
-[//]: # (I have the pleasure of working with [Azadeh Shakery]&#40;https://ece.ut.ac.ir/en/~shakery&#41;{:target="_blank"} and)
+My academic journey has centered around building intelligent systems that are not only powerful but also reliable and fair. 
+I work at the intersection of large language models, multilingual NLP, and AI safety, with a strong interest in both theoretical insights and practical impact.
 
-[//]: # ([Yadollah Yaghoobzadeh]&#40;https://yyaghoobzadeh.github.io/&#41;{:target="_blank"}. Currently, I am a visiting research student at )
-
-[//]: # ([Singapore Management University &#40;SMU&#41;]&#40;https://www.smu.edu.sg/&#41;{:target="_blank"} working under the supervision of [Prof. Djordje Zikelic]&#40;https://djordjezikelic.github.io&#41;)
-
-[//]: # (and a fellow at [Fatima Fellow]&#40;https://fatimafellow.com/&#41;{:target="_blank"}.)
-
-Research Flavor
-======
-
-I am interested in doing research that can address real-world problems and provide practical solutions.
-As AI becomes more integrated into our daily lives, it raises important questions about safety, fairness, and trustworthiness.
-My research aims to make AI systems safer, more trustworthy, more accessible, and to find ways to measure their fairness and reliability. 
-
-[//]: # ()
-[//]: # (LLMs are used in many applications today and have shown great promise in understanding and generating human language. )
-
-[//]: # (However, challenges remain, particularly when it comes to biases, fairness, trustworthiness, and democratization, where these large models are not always accessible to everyone to use or do research.)
-
-[//]: # (A major challenge is ensuring that these models work well for people from different languages and cultures. )
+Looking ahead, 
+I'm eager to build on this foundation by creating AI tools that not only push the boundaries of what machines can do, 
+but also earn people’s confidence through transparency, reliability, and integrity. 
+I’m driven by the goal of shaping technology that truly serves society.
 
 
 News
 ======
+
+- **2025.04**: Our paper, "[Supermartingale Certificates for Quantitative Omega-regular Verification and Control](https://arxiv.org/pdf/2505.18833)," has been accepted to [CAV 2025](https://conferences.i-cav.org/2025/).
 
 - **2024.12**: Our paper, "[Extending LLMs to New Languages: A Case Study of LLaMA and Persian Adaptation]()," has been accepted to [COLING 2025](https://coling2025.org).
 

@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Pouya Sadeghi" # "Pouya Sadeghi / Academic page"
 title_separator          : "-"
 name                     : &name "Pouya Sadeghi"
-description              : &description "B.Sc in Computer Engineering @ University of Tehran"
+description              : &description "M.Math in Computer Science @ University of Waterloo"
 url                      : https://Ipouyall.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Ipouyall/Ipouyall.github.io"
@@ -24,8 +24,8 @@ author:
   avatar           : "profile.jpg"
   name             : "Pouya Sadeghi"
   pronouns         : # example: "she/her"  
-  bio              : "B.Sc in Computer Engineering<br>University of Tehran"
-  location         : "Iran"
+  bio              : "M.Math in Computer Science<br>University of Waterloo"
+  location         : "Canada"
   employer         : #
   uri              : # URL
   email            : "pouya.sadeghi@ut.ac.ir"
@@ -57,7 +57,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-#  linkedin         : "Ipouyall" # Username
+  linkedin         : "Ipouyall" # Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -65,7 +65,7 @@ author:
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-#  twitter          : "Ipouyall"
+  twitter          : "Ipouyall"
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username

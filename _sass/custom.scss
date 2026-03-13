@@ -107,3 +107,205 @@ figcaption {
     font-style: italic;
     font-weight: bold;
 }
+
+
+/* ==========================================================================
+   Contact Page
+   ========================================================================== */
+
+.contact-page {
+  margin-top: 0.5em;
+}
+
+.contact-intro {
+  font-size: 1.05em;
+  color: mix(#fff, $gray, 55%);
+  line-height: 1.75;
+  margin-bottom: 1.5em;
+}
+
+/* Quick-access link buttons (top row + CTA inside blocks) */
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+}
+
+.contact-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  padding: 0.45em 1.05em;
+  border: 1px solid rgba($border-color, 0.45);
+  border-radius: $border-radius;
+  color: $border-color !important;
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-decoration: none !important;
+  background: transparent;
+  transition: $global-transition;
+
+  i { transition: $global-transition; }
+
+  &:hover {
+    background: rgba($border-color, 0.1);
+    border-color: $border-color;
+    box-shadow: 0 0 10px rgba($border-color, 0.15);
+  }
+
+  &:visited { color: $border-color !important; }
+
+  /* Slightly larger CTA variant used inside block bodies */
+  &--cta {
+    padding: 0.55em 1.25em;
+    font-size: $type-size-5;
+    margin-top: 0.4em;
+  }
+}
+
+/* Thin divider between quick-links and blocks */
+.contact-divider {
+  border: none;
+  border-top: 1px solid rgba($border-color, 0.15);
+  margin: 1.75em 0;
+}
+
+/* ── Expandable blocks ── */
+.contact-block {
+  border: 1px solid rgba($border-color, 0.18);
+  border-left: 3px solid rgba($border-color, 0.45);
+  border-radius: $border-radius;
+  margin-bottom: 1em;
+  background: rgba(#fff, 0.025);
+  transition: $global-transition;
+  overflow: hidden;
+
+  &:hover {
+    border-left-color: $border-color;
+    background: rgba(#fff, 0.04);
+  }
+
+  &[open] {
+    border-left-color: $border-color;
+    background: rgba($border-color, 0.04);
+
+    > summary .contact-block-arrow {
+      transform: rotate(180deg);
+    }
+
+    > summary .contact-block-icon {
+      color: $border-color;
+    }
+  }
+
+  summary {
+    padding: 1em 1.2em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    font-family: $sans-serif;
+    font-size: $type-size-5;
+    font-weight: 700;
+    color: $text-color;
+    user-select: none;
+    list-style: none;
+
+    /* Remove native disclosure triangle across browsers */
+    &::-webkit-details-marker { display: none; }
+    &::marker { content: ""; display: none; }
+
+    &:hover .contact-block-title {
+      color: mix(#fff, $border-color, 40%);
+    }
+  }
+}
+
+.contact-block-icon {
+  color: rgba($border-color, 0.7);
+  width: 1.3em;
+  text-align: center;
+  flex-shrink: 0;
+  font-size: 1.1em;
+  transition: $global-transition;
+}
+
+.contact-block-title {
+  flex: 1;
+  transition: $global-transition;
+}
+
+.contact-block-arrow {
+  margin-left: auto;
+  color: $gray;
+  flex-shrink: 0;
+  font-size: 0.8em;
+  transition: transform 0.25s ease, color 0.2s ease;
+}
+
+.contact-block-body {
+  padding: 0.1em 1.2em 1.2em 3.3em;
+  animation: contactReveal 0.22s ease-out forwards;
+
+  p { margin-bottom: 0.75em; }
+  ul { margin-bottom: 0.75em; }
+  li { margin-bottom: 0.35em; }
+}
+
+@keyframes contactReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-block-note {
+  margin-top: 0.85em;
+}
+
+/* Research topic tags */
+.research-tags {
+  margin: 0.8em 0 0.2em;
+}
+
+.research-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  padding: 0.3em 0.85em;
+  background: rgba($border-color, 0.07);
+  border: 1px solid rgba($border-color, 0.3);
+  border-radius: 2em;
+  color: $border-color;
+  font-family: $sans-serif;
+  font-size: 0.83em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 0.25em 0.3em 0.25em 0;
+  transition: $global-transition;
+
+  i { font-size: 0.9em; }
+
+  &:hover {
+    background: rgba($border-color, 0.15);
+    border-color: $border-color;
+  }
+}
+
+/* Responsive: stack everything on small screens */
+@media (max-width: 480px) {
+  .contact-block-body {
+    padding-left: 1.2em;
+  }
+
+  .contact-link-btn--cta {
+    width: 100%;
+    justify-content: center;
+  }
+}
